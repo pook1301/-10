@@ -1,0 +1,116 @@
+/* --- การตั้งค่าทั่วไปและฟอนต์ --- */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* --- เมนูนำทางหลักด้านบน (เหมือนเดิม) --- */
+.main-navigation {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.main-navigation li a:hover {
+    color: #0062cc;
+    background-color: #f8f9fa;
+}
+
+.main-navigation li a.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+}
+
+/* --- ส่วนเนื้อหาและตารางเมนูย่อย (ส่วนที่ปรับปรุงใหม่) --- */
+main {
+    max-width: 900px; /* ปรับความกว้างให้พอดีกับเมนูแนวตั้ง */
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #212529;
+    margin-bottom: 32px;
+}
+
+/* เปลี่ยนจาก Grid เป็น Flexbox แนวตั้ง */
+.menu-grid {
+    display: flex;
+    flex-direction: column; /* จัดเรียงเป็นแนวตั้ง */
+    gap: 12px; /* ลดระยะห่างลงเล็กน้อย */
+}
+
+/* สไตล์ของเมนูย่อยแต่ละ "ช่อง" */
+.menu-item {
+    display: flex; /* จัดเรียง ไอคอน กับ ข้อความ แนวนอน */
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    padding: 20px 24px;
+    text-decoration: none;
+    color: #343a40;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.menu-item:hover {
+    transform: translateX(5px); /* ขยับไปทางขวาเล็กน้อย */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+}
+
+/* ไอคอนในช่องเมนู */
+.menu-item i {
+    font-size: 1.8rem; /* ปรับขนาดไอคอนให้พอดี */
+    color: #007bff;
+    margin-right: 20px; /* สร้างระยะห่างจากข้อความ */
+    width: 30px; /* กำหนดพื้นที่ให้ไอคอน */
+}
+
+/* ข้อความในช่องเมนู */
+.menu-item span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    flex-grow: 1; /* ทำให้ข้อความขยายเต็มพื้นที่ที่เหลือ */
+}
+
+/* เพิ่มลูกศรด้านท้าย (Optional) */
+.menu-item::after {
+    content: '\f054'; /* โค้ดไอคอนลูกศรขวาของ Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ced4da;
+    transition: color 0.2s ease;
+}
+
+.menu-item:hover::after {
+    color: #007bff;
+}

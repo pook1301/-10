@@ -1,0 +1,11 @@
+.srisakdi-regular {
+  font-family: "Srisakdi", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.srisakdi-bold {
+  font-family: "Srisakdi", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
