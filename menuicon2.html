@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+  <title>domyim</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>รายการอาหาร</title>
+<!-- โหลดฟอนต์ Kanit -->
+  <link rel="stylesheet" href="work10.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="menuicon1.css">
+<link rel="stylesheet" href="mwnuicon2.css">
+</head>
+<body>
+
+  <div class="menu-bar">
+        <div class="menu-logo">
+            <img src="d:\นายณัฐพงษ์ เหิมหอม\อิสาน.jfif" alt="DOOF">
+        </div>
+        <div class="menu-container">
+            <a href="menuicon.html" class="menu-item">
+                <img src="d:\นายณัฐพงษ์ เหิมหอม\ภาคอิสาน.jfif" alt="อีสาน">
+                <span>ภาคอีสาน</span>
+            </a>
+            <a href="menuicon2.html" class="menu-item">
+                <img src="d:\นายณัฐพงษ์ เหิมหอม\กลาง.jfif" alt="ของหวาน">
+                <span>ภาคกลาง</span>
+            </a>
+            <a href="menuicon3.html" class="menu-item">
+                <img src="d:\นายณัฐพงษ์ เหิมหอม\ใต้.jpg" alt="อาหารว่าง">
+                <span>ภาคใต้</span>
+            </a>
+            <a href="menuicon4.html" class="menu-item">
+                <img src="d:\นายณัฐพงษ์ เหิมหอม\เหนือ.jpg" alt="อาหารญี่ปุ่น">
+                <span>ภาคเหนือ</span>
+            </a>
+            <a href="menuicon5.html" class="menu-item">
+                <img src="d:\นายณัฐพงษ์ เหิมหอม\เครื่องดื่ม.png" alt="เครื่องดื่ม">
+                <span>เครื่องดื่ม</span>
+            </a>
+        </div>
+    </div>
+<div class="header">
+  <h1>ภาคกลาง</h1>
+</div>
+    
+
+    <ul>
+        <li><a href="menuicon.html">ภาคอีสาน</a></li>
+        <li><a href="menuicon2.html">ภาคกลาง</a></li>
+        <li><a href="menuicon3.html">ภาคใต้</a></li>
+        <li><a href="menuicon4.html">ภาคเหนือ</a></li>
+        <li><a href="menuicon5.html">เครื่องดื่ม</a></li>
+</ul>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center"> Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXxOCfdGVyTuiHw9-GEE4SJLimSgRhHw45Qw&s" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmin5UHbZQ92aqhdLz13xFbf_EnPpMKyuWzg&s" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs00ic9Bh6VCg5segBu0HOZH97syhsTdrmLQ&s" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqJhz-t4LzMw7LN-6eVpjCv61kpUbsgclpw&s" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCkZpkuXy4Kg3Sl-oXqaBId8ZbAlVnKh-kA&s" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
+<h1>รายการอาหาร</h1>
+
+<div class="food-list">
+  <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0009.jpg" alt="วุ้นเม็ดแมงลัก">
+    <div class="food-info">
+      <div class="food-category">แกงเขียวหวานลูกชิ้นปลากราย</div>
+      <div class="food-name">แกงเขียวหวานลูกชิ้นปลากราย</div>
+      <div class="food-price">ราคา 129 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0012.jpg" alt="น้อยหน่าน้ำกะทิ">
+    <div class="food-info">
+      <div class="food-category">แกงเผ็ดไก่</div>
+      <div class="food-name">แกงเผ็ดไก่</div>
+      <div class="food-price">ราคา 119 บาท</div>
+    </div>
+  </div>
+
+ <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0018.jpg" alt="มะพร้าวแก้ว">
+    <div class="food-info">
+      <div class="food-category">พะแนงหมู</div>
+      <div class="food-name">พะแนงหมู</div>
+      <div class="food-price">ราคา 119 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0005.jpg" alt="ข้าวหน้าถั่วหมัก">
+    <div class="food-info">
+      <div class="food-category">ต้มข่าไก่</div>
+      <div class="food-name">ต้มข่าไก่</div>
+      <div class="food-price">ราคา 119 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0002.jpg" alt="จ่ามงกุฎ">
+    <div class="food-info">
+      <div class="food-category"> แกงเลียง</div>
+      <div class="food-name"> แกงเลียง</div>
+      <div class="food-price">ราคา 129 บาท</div>
+    </div>
+  </div>
+
+ <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0026.jpg" alt="ขนมเทียนแก้ว">
+    <div class="food-info">
+      <div class="food-category">แกงจืดตำลึงหมูสับ</div>
+      <div class="food-name">แกงจืดตำลึงหมูสับ</div>
+      <div class="food-price">ราคา 119 บาท</div>
+    </div>
+  </div>
+
+ <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0033.jpg" alt="พุดดิ้งแก้ว">
+    <div class="food-info">
+      <div class="food-category">พะโล้</div>
+      <div class="food-name">พะโล้</div>
+      <div class="food-price">ราคา 119 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0039.jpg" alt="ซูเฟล่แพนเค้กนมเย็น">
+    <div class="food-info">
+      <div class="food-category">ยำปลาดุกฟู</div>
+      <div class="food-name">ยำปลาดุกฟู</div>
+      <div class="food-price">ราคา 129 บาท</div>
+    </div>
+  </div>
+
+ <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0042.jpg" alt="ขนมปังช็อกโกแลตนมสด">
+    <div class="food-info">
+      <div class="food-category">ทอดมันปลากราย</div>
+      <div class="food-name">ทอดมันปลากราย</div>
+      <div class="food-price">ราคา 119 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0045.jpg" alt="สตอเบอรี่ช็อตเค้ก">
+    <div class="food-info">
+      <div class="food-category">ห่อหมกปลาช่อนใบยอ</div>
+      <div class="food-name">ห่อหมกปลาช่อนใบยอ</div>
+      <div class="food-price">ราคาชิ้ละ 69 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0048.jpg" alt="วุ้นกรอบ">
+    <div class="food-info">
+      <div class="food-category">น้ำพริกกะปิ ปลาทูทอด</div>
+      <div class="food-name">น้ำพริกกะปิ ปลาทูทอด</div>
+      <div class="food-price">ราคา 129 บาท</div>
+    </div>
+  </div>
+
+ <div class="food-item">
+    <img class="food-image" src="https://inmu.mahidol.ac.th/gallery/inmucooking/Central_Region_food/image/t_0053.jpg" alt="ข้าวแดกงา">
+    <div class="food-info">
+      <div class="food-category">เต้าเจี้ยวหลน</div>
+      <div class="food-name">เต้าเจี้ยวหลน</div>
+      <div class="food-price">ราคา 129 บาท</div>
+    </div>
+  </div>
+
+</div>
+
+<a href="menuicon3.html">ถัดไป</a>
+
+<!-- Footer Section -->
+<footer style="background-color: #b7f0dd; color: white; padding: 40px 20px; font-family: sans-serif;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+
+    <!-- เกี่ยวกับเรา -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h3>เกี่ยวกับเรา</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li>ร่วมงานกับเรา</li>
+        <li>ข่าวและกิจกรรม</li>
+        <li>นโยบายการใช้คุกกี้ (Cookies Policy)</li>
+        <li>ข้อกำหนดและเงื่อนไขในการใช้บริการเว็บไซต์</li>
+        <li>การเก็บรวบรวมข้อมูลส่วนบุคคลของสมาชิก (Privacy Notice)</li>
+      </ul>
+    </div>
+
+    <!-- ช่วยเหลือ -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h3>ช่วยเหลือ</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li>คำถามที่พบบ่อย</li>
+        <li>ติดต่อเรา</li>
+      </ul>
+    </div>
+
+    <!-- ติดตามเรา -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h3>ติดตามเรา</h3>
+      <div style="margin-bottom: 10px;">
+        <span style="margin-right: 10px;">📘</span>
+        <span style="margin-right: 10px;">🐦</span>
+        <span style="margin-right: 10px;">📺</span>
+        <span style="margin-right: 10px;">📸</span>
+        <span>💬</span>
+      </div>
+      <p>รับโปรโมชั่นและดีลพิเศษก่อนใคร</p>
+      <form>
+        <input type="email" placeholder="ใส่อีเมลของคุณ" style="padding: 8px; border: none; border-radius: 5px;">
+        <button style="padding: 8px 12px; border: none; background: white; color: #759e90; border-radius: 5px;">เข้าร่วม</button>
+      </form>
+    </div>
+
+    <!-- ดาวน์โหลดแอป -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h3>ดาวน์โหลดแอป </h3>
+      <img src="qrcode.png" alt="QR Code" style="width: 100px; margin-bottom: 10px;">
+      <div>
+        <img src="appstore.png" alt="App Store" style="width: 120px; margin-bottom: 5px;"><br>
+        <img src="googleplay.png" alt="Google Play" style="width: 120px; margin-bottom: 5px;"><br>
+        <img src="appgallery.png" alt="App Gallery" style="width: 120px;">
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
