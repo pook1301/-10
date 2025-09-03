@@ -1,226 +1,47 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8" />
-  <title>domyim</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>รายการอาหาร</title>
-<!-- โหลดฟอนต์ Kanit -->
-  <link rel="stylesheet" href="work10.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="font.css">
-<link rel="stylesheet" href="menuicon1.css">
-<link rel="stylesheet" href="mwnuicon2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เครื่องดื่ม - ร้านกินไปไทยหรั่ง</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-
-<div class="menu-bar">
-        <div class="menu-logo">
-            <img src="d:\นายณัฐพงษ์ เหิมหอม\อิสาน.jfif" alt="DOOF">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">กินไปไทยหรั่ง</a>
+            <ul class="nav-links">
+                <li><a href="menuicon1.html"><i class="fa-solid fa-star"></i> เมนูแนะนำ</a></li>
+                <li><a href="menuicon2.html"><i class="fa-solid fa-utensils"></i> เรียกน้ำย่อย</a></li>
+                <li><a href="menuicon3.html"><i class="fa-solid fa-plate-wheat"></i> จานหลัก</a></li>
+                <li><a href="menuicon4.html"><i class="fa-solid fa-ice-cream"></i> ของหวาน</a></li>
+                <li><a href="menuicon5.html" class="active"><i class="fa-solid fa-martini-glass-citrus"></i> เครื่องดื่ม</a></li>
+            </ul>
         </div>
-        <div class="menu-container">
-            <a href="menuicon.html" class="menu-item">
-                <img src="d:\นายณัฐพงษ์ เหิมหอม\ภาคอิสาน.jfif" alt="อีสาน">
-                <span>ภาคอีสาน</span>
-            </a>
-            <a href="menuicon2.html" class="menu-item">
-                <img src="d:\นายณัฐพงษ์ เหิมหอม\กลาง.jfif" alt="ของหวาน">
-                <span>ภาคกลาง</span>
-            </a>
-            <a href="menuicon3.html" class="menu-item">
-                <img src="d:\นายณัฐพงษ์ เหิมหอม\ใต้.jpg" alt="อาหารว่าง">
-                <span>ภาคใต้</span>
-            </a>
-            <a href="menuicon4.html" class="menu-item">
-                <img src="d:\นายณัฐพงษ์ เหิมหอม\เหนือ.jpg" alt="อาหารญี่ปุ่น">
-                <span>ภาคเหนือ</span>
-            </a>
-            <a href="menuicon5.html" class="menu-item">
-                <img src="d:\นายณัฐพงษ์ เหิมหอม\เครื่องดื่ม.png" alt="เครื่องดื่ม">
-                <span>เครื่องดื่ม</span>
-            </a>
+    </nav>
+    <header class="page-header"><h1>🍹 เครื่องดื่ม 🍹</h1></header>
+    <main class="container">
+        <div class="menu-grid">
+            <div class="menu-card"> <img src="https://s359.kapook.com/pagebuilder/3c09c1ab-5e43-49db-99af-a985a2d8c61b.jpg"> <div class="card-content"><h3>น้ำส้มคั้นสด</h3><p>น้ำส้มคั้นสด 100% ไม่ผสมน้ำตาล ดีต่อสุขภาพ</p><p class="price">120฿</p></div> </div>
+            <div class="menu-card"> <img src="https://img.kapook.com/u/2023/wanwanat/1661209351.jpg"> <div class="card-content"><h3>น้ำมะนาวอัญชัน</h3><p>น้ำมะนาวผสมดอกอัญชัน สีสวยสดชื่น</p><p class="price">90฿</p></div> </div>
+            <div class="menu-card"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCM5LXM3LqVOKC7xrN6wh2TppN70KibSmPKA&s"> <div class="card-content"><h3>กาแฟลาเต้ร้อน</h3><p>กาแฟเอสเพรสโซ่ผสมนมร้อนและฟองนมนุ่มๆ</p><p class="price">110฿</p></div> </div>
+            <div class="menu-card"> <img src="https://benothailand.com/cdn/shop/articles/Iced_thai_milk_tea_in_glass_c7d9032b-0d19-4a0e-8a90-b599206eea6b.jpg?v=1740593050&width=480"> <div class="card-content"><h3>ชาไทยเย็น</h3><p>ชาไทยรสชาติเข้มข้น หอมหวานมัน</p><p class="price">95฿</p></div> </div>
+            <div class="menu-card"> <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=80"> <div class="card-content"><h3>โมจิโต้</h3><p>ค็อกเทลสุดคลาสสิกที่สดชื่นด้วยรสมะนาวและใบมินต์</p><p class="price">220฿</p></div> </div>
+            <div class="menu-card"> <img src="https://www.crystalsymphonylighting.com/wp-content/uploads/2020/07/%E0%B8%9B%E0%B8%81.jpg"> <div class="card-content"><h3>ไวน์แดง (แก้ว)</h3><p>ไวน์แดงจากฝรั่งเศส รสชาติกลมกล่อม</p><p class="price">250฿</p></div> </div>
+            <div class="menu-card"> <img src="https://www.unlockmen.com/wp-content/uploads/2017/03/Fotolia_68290440_Subscription_Monthly_M-e1490958966263.jpg"> <div class="card-content"><h3>เบียร์สด</h3><p>เบียร์สดเย็นๆ มีให้เลือกหลากหลายยี่ห้อ</p><p class="price">150฿</p></div> </div>
+            <div class="menu-card"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv6OBH4hS8SaqOPIWVV3Zq-3QYKyKLvlfzJstr9uYtOOAIjolzScm1z43C78DNQ3L9iugTajv_wHABlXb1hEoScwcIQAbeeyBch5qNjh-3vxpGzua_Ija_h62DDehcr1tW1TypNHXwJLI/s1600/B05DD4D9574A40F1B5F2B09DDB320258.jpg"> <div class="card-content"><h3>อิตาเลียนโซดา</h3><p>โซดาซ่าผสมไซรัปผลไม้ (เลือกไซรัปได้)</p><p class="price">100฿</p></div> </div>
+            <div class="menu-card"> <img src="https://www.easycookingmenu.com/media/k2/items/cache/31ab80c5b515a43125d7d477a8d33d70_XL.jpg"> <div class="card-content"><h3>น้ำมะพร้าวปั่น</h3><p>น้ำมะพร้าวสดปั่นนมสด หอมหวานชื่นใจ</p><p class="price">130฿</p></div> </div>
+            <div class="menu-card"> <img src="https://www.nestleprofessional.co.th/sites/default/files/styles/np_recipe_detail/public/2022-04/dirty-chocolate-540x400.png?itok=rm0C6BTi"> <div class="card-content"><h3>ช็อกโกแลตเย็น</h3><p>ช็อกโกแลตพรีเมียมปั่น รสชาติเข้มข้น</p><p class="price">120฿</p></div> </div>
+            <div class="menu-card"> <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5KPWS9wET3rWu75QxyRYvSHn7tQzo1GS3zOmSndKTpFFH1WgTvQ.webp"> <div class="card-content"><h3>น้ำแร่ธรรมชาติ</h3><p>น้ำแร่ธรรมชาติเย็นๆ</p><p class="price">40฿</p></div> </div>
+            <div class="menu-card"> <img src="https://home.maefahluang.org/images/editor/soft-drink.jpg"> <div class="card-content"><h3>น้ำอัดลม</h3><p>โค้ก, สไปรท์, แฟนต้า</p><p class="price">50฿</p></div> </div>
         </div>
-    </div>
+    </main>
+    <footer class="site-footer"><p>&copy; 2025 กินไปไทยหรั่ง. All Rights Reserved.</p></footer>
 
-<div class="header">
-  <h1>เครื่องดื่ม</h1>
-</div>
-    
-
-    <ul>
-        <li><a href="menuicon.html">ภาคอีสาน</a></li>
-        <li><a href="menuicon2.html">ภาคกลาง</a></li>
-        <li><a href="menuicon3.html">ภาคใต้</a></li>
-        <li><a href="menuicon4.html">ภาคเหนือ</a></li>
-        <li><a href="menuicon5.html">เครื่องดื่ม</a></li>
-</ul>
-
-<!DOCTYPE html>
-<html>
-
-<head>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<style>
-.mySlides {display:none;}
-</style>
-</head>
-
-<body>
-
-<h2 class="w3-center"> Slideshow</h2>
-
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXxOCfdGVyTuiHw9-GEE4SJLimSgRhHw45Qw&s" style="width:100%">
-  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmin5UHbZQ92aqhdLz13xFbf_EnPpMKyuWzg&s" style="width:100%">
-  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs00ic9Bh6VCg5segBu0HOZH97syhsTdrmLQ&s" style="width:100%">
-  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqJhz-t4LzMw7LN-6eVpjCv61kpUbsgclpw&s" style="width:100%">
-  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCkZpkuXy4Kg3Sl-oXqaBId8ZbAlVnKh-kA&s" style="width:100%">
-</div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-
-</body>
-</html>
-
-<h1>รายการอาหาร</h1>
-
-<div class="food-list">
-  <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/1920x0/2022/09/21/6729e3e1db21413d8e252fcecec4541a.jpg" alt="บัตเตอร์เบียร์">
-    <div class="food-info">
-      <div class="food-category">บัตเตอร์เบียร์</div>
-      <div class="food-name">บัตเตอร์เบียร์</div>
-      <div class="food-price">ราคา 120 บาท</div>
-    </div>
-  </div>
-
-  <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/1920x0/2022/05/10/e19bfa34bb4e4cc4a2f1840aae04810f.jpg" alt="นมสดอะโวคาโด">
-    <div class="food-info">
-      <div class="food-category">นมสดอะโวคาโด</div>
-      <div class="food-name">นมสดอะโวคาโด</div>
-      <div class="food-price">ราคา 80 บาท</div>
-    </div>
-  </div>
-
- <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/1920x0/2022/02/02/02806dd379a64ce89faa3879603eb94c.jpg" alt="น้ำขิง">
-    <div class="food-info">
-      <div class="food-category">น้ำขิง</div>
-      <div class="food-name">น้ำขิง</div>
-      <div class="food-price">ราคา 60 บาท</div>
-    </div>
-  </div>
-
-  <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/1920x0/2022/03/09/ea370d8d800e469fb9f9d5d86cb618e9.jpg" alt="ชาไทย">
-    <div class="food-info">
-      <div class="food-category">ชาไทย</div>
-      <div class="food-name">ชาไทย</div>
-      <div class="food-price">ราคา 60 บาท</div>
-    </div>
-  </div>
-
-  <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/l/2017/09/15/52b7a43faef24f9f9c80e188d810fa86.jpg" alt="สมูทตี้ช็อกโกบานานา">
-    <div class="food-info">
-      <div class="food-category">สมูทตี้ช็อกโกบานานา</div>
-      <div class="food-name">สมูทตี้ช็อกโกบานานา</div>
-      <div class="food-price">ราคา 120 บาท</div>
-    </div>
-  </div>
-
- <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/l/2017/05/18/3089eeb589c349e5b3ee616722f1dfdd.jpg" alt="กาโตะสลัชชี่">
-    <div class="food-info">
-      <div class="food-category">กาโตะสลัชชี่</div>
-      <div class="food-name">กาโตะสลัชชี่</div>
-      <div class="food-price">ราคา 80 บาท</div>
-    </div>
-  </div>
-
- <div class="food-item">
-    <img class="food-image" src="https://s3-ap-southeast-1.amazonaws.com/photo.wongnai.com/photos/2017/04/02/de89af2980874b75bb33bce7c46a0633.jpg" alt="สเลอร์ปี้">
-    <div class="food-info">
-      <div class="food-category">สเลอร์ปี้</div>
-      <div class="food-name">สเลอร์ปี้</div>
-      <div class="food-price">ราคา 50 บาท</div>
-    </div>
-  </div>
-
-  <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/1920x0/2022/04/10/4de68896965745358bc60b8a1c130959.jpg" alt="มัทฉะลาเต้">
-    <div class="food-info">
-      <div class="food-category">มัทฉะลาเต้</div>
-      <div class="food-name">มัทฉะลาเต้</div>
-      <div class="food-price">ราคา 60 บาท</div>
-    </div>
-  </div>
-
- <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/400x0/2024/12/27/1b16f1e5da714a8ba4cabf04e524c660.jpg" alt="ผักผลไม้รวมปั่น">
-    <div class="food-info">
-      <div class="food-category">ผักผลไม้รวมปั่น</div>
-      <div class="food-name">ผักผลไม้รวมปั่น</div>
-      <div class="food-price">ราคา 60 บาท</div>
-    </div>
-  </div>
-
-  <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/1920x0/2021/08/02/85c0e8bc99a84ef4a0555069b92d11ec.jpg" alt="ชาชีสผลไม้">
-    <div class="food-info">
-      <div class="food-category">ชาชีสผลไม้</div>
-      <div class="food-name">ชาชีสผลไม้</div>
-      <div class="food-price">ราคา 60 บาท</div>
-    </div>
-  </div>
-
-  <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/400x0/2024/10/03/3a28a5cc66514f49aeec106b9ff68f1a.jpg" alt="สตอเบอร์รี่สมูทตี้">
-    <div class="food-info">
-      <div class="food-category">สตอเบอร์รี่สมูทตี้</div>
-      <div class="food-name">สตอเบอร์รี่สมูทตี้</div>
-      <div class="food-price">ราคา 60 บาท</div>
-    </div>
-  </div>
-
- <div class="food-item">
-    <img class="food-image" src="https://img.wongnai.com/p/1920x0/2021/07/12/07bde1569e5c46ea86f0c07ad1f092c6.jpg" alt="แยมโซดา">
-    <div class="food-info">
-      <div class="food-category">แยมโซดา</div>
-      <div class="food-name">แยมโซดา</div>
-      <div class="food-price">ราคา 80 บาท</div>
-    </div>
-  </div>
-
-</div>
-
-<a href="menuicon.html">ถัดไป</a>
-
-<!-- Footer Section -->
-<footer style="background-color: #b7f0dd; color: white; padding: 40px 20px; font-family: sans-serif;">
+    <!-- Footer Section -->
+<footer style="background-color: #006241; color: white; padding: 40px 20px; font-family: sans-serif;">
   <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
 
     <!-- เกี่ยวกับเรา -->
@@ -257,7 +78,7 @@ function carousel() {
       <p>รับโปรโมชั่นและดีลพิเศษก่อนใคร</p>
       <form>
         <input type="email" placeholder="ใส่อีเมลของคุณ" style="padding: 8px; border: none; border-radius: 5px;">
-        <button style="padding: 8px 12px; border: none; background: white; color: #759e90; border-radius: 5px;">เข้าร่วม</button>
+        <button style="padding: 8px 12px; border: none; background: white; color: #006241; border-radius: 5px;">เข้าร่วม</button>
       </form>
     </div>
 
@@ -274,6 +95,5 @@ function carousel() {
 
   </div>
 </footer>
-
 </body>
 </html>
